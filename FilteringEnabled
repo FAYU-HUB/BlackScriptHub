@@ -1,0 +1,2 @@
+local FilteringEnabled = Workspace.FilteringEnabled
+FilteringEnabled = true
