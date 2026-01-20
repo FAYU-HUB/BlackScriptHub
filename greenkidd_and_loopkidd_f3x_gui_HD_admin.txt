@@ -2788,7 +2788,7 @@ local function BDVY_fake_script() -- TextButton_23.LocalScript
 	
 	button.MouseButton1Click:Connect(function()
 		local message = Instance.new("Message",workspace)
-		message.Text = "credits to www.youtube.com/@TrafficConeHax"
+		message.Text = "credits to WarmKidd (the original text is trafficconehax but the Gui is skidded from WarmKidd) "
 		wait(3)
 		message:Destroy()
 	
