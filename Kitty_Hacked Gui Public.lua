@@ -1412,4 +1412,197 @@ LMG2L["TextButton_c"].MouseButton1Down:connect(function()
     Frame:Destroy()
 end)
 
+LMG2L["TextButton8_f"].MouseButton1Down:connect(function()
+			local player = game.Players.LocalPlayer
+local char = player.Character
+local tool
+for i,v in pairs(player:GetDescendants()) do
+    if v.Name == "SyncAPI" then
+        tool = v.Parent
+    end
+end
+for i,v in pairs(game.ReplicatedStorage:GetDescendants()) do
+    if v.Name == "SyncAPI" then
+        tool = v.Parent
+    end
+end
+
+remote = tool.SyncAPI.ServerEndpoint
+function _(args)
+    remote:InvokeServer(unpack(args))
+end
+
+function CreatePart(cf,parent)
+    local args = {
+        [1] = "CreatePart",
+        [2] = "Normal",
+        [3] = cf,
+        [4] = parent
+    }
+    _(args)
+end
+
+function SetAnchor(boolean,part)
+    local args = {
+        [1] = "SyncAnchor",
+        [2] = {
+            [1] = {
+                ["Part"] = part,
+                ["Anchored"] = boolean
+            }
+        }
+    }
+    _(args)
+end
+
+function SetLocked(part,boolean)
+    local args = {
+        [1] = "SetLocked",
+        [2] = {
+            [1] = part
+        },
+        [3] = boolean
+    }
+    _(args)
+end
+
+function AddMesh(part, meshType, scale)
+    local args = {
+        [1] = "CreateMeshes",
+        [2] = {
+            [1] = {
+                ["Part"] = part,
+                ["MeshType"] = meshType,
+                ["Scale"] = scale
+            }
+        }
+    }
+    _(args)
+end
+
+function MovePart(part, cf)
+    local args = {
+        [1] = "SyncMove",
+        [2] = {
+            [1] = {
+                ["Part"] = part,
+                ["CFrame"] = cf
+            }
+        }
+    }
+    _(args)
+end
+
+function SetColor(part, color)
+    local args = {
+        [1] = "SyncMaterial",
+        [2] = {
+            [1] = {
+                ["Part"] = part,
+                ["Color"] = color
+            }
+        }
+    }
+    _(args)
+end
+
+function MeshResize(part,size)
+    local args = {
+        [1] = "SyncMesh",
+        [2] = {
+            [1] = {
+                ["Part"] = part,
+                ["Scale"] = size
+            }
+        }
+    }
+    _(args)
+end
+
+function Resize(part,size,cf)
+    local args = {
+        [1] = "SyncResize",
+        [2] = {
+            [1] = {
+                ["Part"] = part,
+                ["CFrame"] = cf,
+                ["Size"] = size
+            }
+        }
+    }
+    _(args)
+end
+
+function Color(part,color)
+    local args = {
+        [1] = "SyncColor",
+        [2] = {
+            [1] = {
+                ["Part"] = part,
+                ["Color"] = color, --[[Color3]]
+                ["UnionColoring"] = false
+            }
+        }
+    }
+    _(args)
+end
+
+local torso = char:WaitForChild("Torso")
+local cf = CFrame.new(torso.Position - Vector3.new(0, 4, 0))
+local partArgs = {["Part"] = nil}
+
+local args = {
+    [1] = "CreatePart",
+    [2] = "Normal",
+    [3] = cf,
+    [4] = workspace
+}
+_(args)
+
+local newPart
+for i,v in pairs(workspace:GetChildren()) do
+    if v:IsA("Part") and (v.Position - torso.Position).magnitude < 10 then
+        newPart = v
+    end
+end
+
+if newPart then
+    SetLocked(newPart, true)
+    SetAnchor(true, newPart)
+    AddMesh(newPart, "Cylinder", Vector3.new(8, 1.2, 8))
+    MeshResize(newPart, Vector3.new(4, 1, 4))
+    Color(newPart, Color3.fromRGB(104, 0, 104))
+end
+
+spawn(function()
+    while true do
+        wait()
+        local targetCF = CFrame.new(torso.Position - Vector3.new(0, 4, 0))
+        MovePart(newPart, targetCF)
+    end
+  end)
+end)
+
+LMG2L["TextButton10_e"].MouseButton1Down:connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+        local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 1839246711 ;volume Inf ;pitch 1.2")
+end)
+
+LMG2L["TextButton9_10"].MouseButton1Down:connect(function()
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+    local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+RequestCommand:InvokeServer("/music 78534559289195 /pitch 1.1 /volume inf")
+end)
+
+LMG2L["TextButton9_11"].MouseButton1Down:connect(function()
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+    local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+RequestCommand:InvokeServer("/music 127653283576622 /pitch 1.15 /volume inf")
+end)
+
+local frame = LMG2L["Frame_2"]
+frame.Active = true
+frame.Draggable = true
+
 return LMG2L["ScreenGui_1"], require;
