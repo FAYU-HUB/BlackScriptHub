@@ -1,22 +1,15 @@
-
--- Instances: 19 | Scripts: 0 | Modules: 0 | Tags: 0
 local LMG2L = {};
 
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui
 LMG2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 LMG2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 LMG2L["ScreenGui_1"]["ResetOnSpawn"] = false;
 
-
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui.Frame
 LMG2L["Frame_2"] = Instance.new("Frame", LMG2L["ScreenGui_1"]);
 LMG2L["Frame_2"]["BackgroundColor3"] = Color3.fromRGB(132, 212, 255);
 LMG2L["Frame_2"]["Size"] = UDim2.new(0.5531, 0, 0.96454, 0);
 LMG2L["Frame_2"]["Position"] = UDim2.new(0.15447, 0, -0.02396, 0);
 LMG2L["Frame_2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
-
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui.Frame.TextButton9
 LMG2L["TextButton9_3"] = Instance.new("TextButton", LMG2L["Frame_2"]);
 LMG2L["TextButton9_3"]["BackgroundColor3"] = Color3.fromRGB(132, 212, 255);
 LMG2L["TextButton9_3"]["Size"] = UDim2.new(0.29279, 0, 0.12422, 0);
@@ -25,8 +18,6 @@ LMG2L["TextButton9_3"]["Text"] = [[Cloud Rc7 V4]];
 LMG2L["TextButton9_3"]["Name"] = [[TextButton9]];
 LMG2L["TextButton9_3"]["Position"] = UDim2.new(0.68018, 0, 0.46584, 0);
 
-
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui.Frame.TextButton7
 LMG2L["TextButton7_4"] = Instance.new("TextButton", LMG2L["Frame_2"]);
 LMG2L["TextButton7_4"]["BackgroundColor3"] = Color3.fromRGB(132, 212, 255);
 LMG2L["TextButton7_4"]["Size"] = UDim2.new(0.29279, 0, 0.12422, 0);
@@ -35,8 +26,6 @@ LMG2L["TextButton7_4"]["Text"] = [[Skybox]];
 LMG2L["TextButton7_4"]["Name"] = [[TextButton7]];
 LMG2L["TextButton7_4"]["Position"] = UDim2.new(0.02252, 0, 0.46584, 0);
 
-
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui.Frame.TextButton2
 LMG2L["TextButton2_5"] = Instance.new("TextButton", LMG2L["Frame_2"]);
 LMG2L["TextButton2_5"]["BackgroundColor3"] = Color3.fromRGB(132, 212, 255);
 LMG2L["TextButton2_5"]["Size"] = UDim2.new(0.29279, 0, 0.12422, 0);
@@ -45,8 +34,6 @@ LMG2L["TextButton2_5"]["Text"] = [[Mesagge]];
 LMG2L["TextButton2_5"]["Name"] = [[TextButton2]];
 LMG2L["TextButton2_5"]["Position"] = UDim2.new(0.35135, 0, 0.13665, 0);
 
-
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui.Frame.TextButton3
 LMG2L["TextButton3_6"] = Instance.new("TextButton", LMG2L["Frame_2"]);
 LMG2L["TextButton3_6"]["BackgroundColor3"] = Color3.fromRGB(132, 212, 255);
 LMG2L["TextButton3_6"]["Size"] = UDim2.new(0.29279, 0, 0.12422, 0);
@@ -55,8 +42,6 @@ LMG2L["TextButton3_6"]["Text"] = [[Hint]];
 LMG2L["TextButton3_6"]["Name"] = [[TextButton3]];
 LMG2L["TextButton3_6"]["Position"] = UDim2.new(0.68018, 0, 0.13665, 0);
 
-
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui.Frame.TextButton
 LMG2L["TextButton_7"] = Instance.new("TextButton", LMG2L["Frame_2"]);
 LMG2L["TextButton_7"]["BackgroundColor3"] = Color3.fromRGB(132, 212, 255);
 LMG2L["TextButton_7"]["Size"] = UDim2.new(0.29279, 0, 0.12422, 0);
@@ -64,8 +49,6 @@ LMG2L["TextButton_7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 LMG2L["TextButton_7"]["Text"] = [[Building Tools]];
 LMG2L["TextButton_7"]["Position"] = UDim2.new(0.02252, 0, 0.13665, 0);
 
-
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui.Frame.TextButton4
 LMG2L["TextButton4_8"] = Instance.new("TextButton", LMG2L["Frame_2"]);
 LMG2L["TextButton4_8"]["BackgroundColor3"] = Color3.fromRGB(132, 212, 255);
 LMG2L["TextButton4_8"]["Size"] = UDim2.new(0.29279, 0, 0.12422, 0);
@@ -74,8 +57,6 @@ LMG2L["TextButton4_8"]["Text"] = [[KH Realm]];
 LMG2L["TextButton4_8"]["Name"] = [[TextButton4]];
 LMG2L["TextButton4_8"]["Position"] = UDim2.new(0.02252, 0, 0.30435, 0);
 
-
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui.Frame.TextButton6
 LMG2L["TextButton6_9"] = Instance.new("TextButton", LMG2L["Frame_2"]);
 LMG2L["TextButton6_9"]["BackgroundColor3"] = Color3.fromRGB(132, 212, 255);
 LMG2L["TextButton6_9"]["Size"] = UDim2.new(0.29279, 0, 0.12422, 0);
@@ -84,8 +65,6 @@ LMG2L["TextButton6_9"]["Text"] = [[Spinning Skybox]];
 LMG2L["TextButton6_9"]["Name"] = [[TextButton6]];
 LMG2L["TextButton6_9"]["Position"] = UDim2.new(0.68018, 0, 0.30435, 0);
 
-
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui.Frame.TextButton5
 LMG2L["TextButton5_a"] = Instance.new("TextButton", LMG2L["Frame_2"]);
 LMG2L["TextButton5_a"]["BackgroundColor3"] = Color3.fromRGB(132, 212, 255);
 LMG2L["TextButton5_a"]["Size"] = UDim2.new(0.29279, 0, 0.12422, 0);
@@ -94,8 +73,6 @@ LMG2L["TextButton5_a"]["Text"] = [[Spam Decal]];
 LMG2L["TextButton5_a"]["Name"] = [[TextButton5]];
 LMG2L["TextButton5_a"]["Position"] = UDim2.new(0.35135, 0, 0.30435, 0);
 
-
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui.Frame.TextLabel
 LMG2L["TextLabel_b"] = Instance.new("TextLabel", LMG2L["Frame_2"]);
 LMG2L["TextLabel_b"]["TextSize"] = 18;
 LMG2L["TextLabel_b"]["BackgroundColor3"] = Color3.fromRGB(132, 212, 255);
@@ -103,8 +80,6 @@ LMG2L["TextLabel_b"]["Size"] = UDim2.new(1, 0, 0.10559, 0);
 LMG2L["TextLabel_b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 LMG2L["TextLabel_b"]["Text"] = [[Kitty_Hacked Gui :P]];
 
-
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui.Frame.TextLabel.TextButton
 LMG2L["TextButton_c"] = Instance.new("TextButton", LMG2L["TextLabel_b"]);
 LMG2L["TextButton_c"]["BorderSizePixel"] = 0;
 LMG2L["TextButton_c"]["TextSize"] = 24;
@@ -115,13 +90,9 @@ LMG2L["TextButton_c"]["Size"] = UDim2.new(0.08108, 0, 1, 0);
 LMG2L["TextButton_c"]["Text"] = [[×]];
 LMG2L["TextButton_c"]["Position"] = UDim2.new(0.91892, 0, 0, 0);
 
-
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui.Frame.TextLabel.TextButton.UIStroke
 LMG2L["UIStroke_d"] = Instance.new("UIStroke", LMG2L["TextButton_c"]);
 LMG2L["UIStroke_d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
-
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui.Frame.TextButton10
 LMG2L["TextButton10_e"] = Instance.new("TextButton", LMG2L["Frame_2"]);
 LMG2L["TextButton10_e"]["BackgroundColor3"] = Color3.fromRGB(132, 212, 255);
 LMG2L["TextButton10_e"]["Size"] = UDim2.new(0.29279, 0, 0.12422, 0);
@@ -130,8 +101,6 @@ LMG2L["TextButton10_e"]["Text"] = [[Theme]];
 LMG2L["TextButton10_e"]["Name"] = [[TextButton10]];
 LMG2L["TextButton10_e"]["Position"] = UDim2.new(0.02252, 0, 0.63354, 0);
 
-
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui.Frame.TextButton8
 LMG2L["TextButton8_f"] = Instance.new("TextButton", LMG2L["Frame_2"]);
 LMG2L["TextButton8_f"]["BackgroundColor3"] = Color3.fromRGB(132, 212, 255);
 LMG2L["TextButton8_f"]["Size"] = UDim2.new(0.29279, 0, 0.12422, 0);
@@ -140,8 +109,6 @@ LMG2L["TextButton8_f"]["Text"] = [[Floating Pad]];
 LMG2L["TextButton8_f"]["Name"] = [[TextButton8]];
 LMG2L["TextButton8_f"]["Position"] = UDim2.new(0.35135, 0, 0.46584, 0);
 
-
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui.Frame.TextButton9
 LMG2L["TextButton9_10"] = Instance.new("TextButton", LMG2L["Frame_2"]);
 LMG2L["TextButton9_10"]["BackgroundColor3"] = Color3.fromRGB(132, 212, 255);
 LMG2L["TextButton9_10"]["Size"] = UDim2.new(0.29279, 0, 0.12422, 0);
@@ -150,8 +117,6 @@ LMG2L["TextButton9_10"]["Text"] = [[HERE I COME pitch 1.1]];
 LMG2L["TextButton9_10"]["Name"] = [[TextButton9]];
 LMG2L["TextButton9_10"]["Position"] = UDim2.new(0.35135, 0, 0.63354, 0);
 
-
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui.Frame.TextButton9
 LMG2L["TextButton9_11"] = Instance.new("TextButton", LMG2L["Frame_2"]);
 LMG2L["TextButton9_11"]["BackgroundColor3"] = Color3.fromRGB(132, 212, 255);
 LMG2L["TextButton9_11"]["Size"] = UDim2.new(0.29279, 0, 0.12422, 0);
@@ -160,8 +125,6 @@ LMG2L["TextButton9_11"]["Text"] = [[BodyPartz]];
 LMG2L["TextButton9_11"]["Name"] = [[TextButton9]];
 LMG2L["TextButton9_11"]["Position"] = UDim2.new(0.68018, 0, 0.62733, 0);
 
-
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui.Frame.TextButton
 LMG2L["TextButton_12"] = Instance.new("TextButton", LMG2L["Frame_2"]);
 LMG2L["TextButton_12"]["TextSize"] = 18;
 LMG2L["TextButton_12"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
@@ -171,10 +134,11 @@ LMG2L["TextButton_12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 LMG2L["TextButton_12"]["Text"] = [[DESTROY SERVER]];
 LMG2L["TextButton_12"]["Position"] = UDim2.new(0.02252, 0, 0.78261, 0);
 
-
--- Players.Kitty_Hackedz.PlayerGui.ScreenGui.Frame.UIAspectRatioConstraint
 LMG2L["UIAspectRatioConstraint_13"] = Instance.new("UIAspectRatioConstraint", LMG2L["Frame_2"]);
 LMG2L["UIAspectRatioConstraint_13"]["AspectRatio"] = 1.37888;
+
+
+
 
 LMG2L["TextButton7_4"].MouseButton1Down:connect(function()
 local player = game.Players.LocalPlayer
