@@ -749,19 +749,201 @@ task.spawn(C_13);
 -- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextButton.LocalScript
 local function C_15()
 	local script = LMG2L["LocalScript_15"];
-	
+		local getbutton = script.parent
+  getbutton.MouseButton1Down:connect(function()
+  local player = game.Players.LocalPlayer
+local char = player.Character
+
+local tool
+
+for i,v in player:GetDescendants() do
+    if v.Name == "SyncAPI" then
+        tool = v.Parent
+    end
+end
+
+if not tool then
+    for i,v in game.ReplicatedStorage:GetDescendants() do
+        if v.Name == "SyncAPI" then
+            tool = v.Parent
+        end
+    end
+end
+
+local remote = tool.SyncAPI.ServerEndpoint
+
+function _(args)
+    remote:InvokeServer(unpack(args))
+end
+
+function CreateSpawn(cf, parent)
+    local args = {
+        [1] = "CreatePart",
+        [2] = "Spawn",
+        [3] = cf,
+        [4] = parent
+    }
+    _(args)
+end
+
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+
+function SetAnchor(boolean, part)
+    local args = {[1] = "SyncAnchor", [2] = {[1] = {["Part"] = part, ["Anchored"] = boolean}}}
+    _(args)
+end
+
+function Resize(part, size, cf)
+    local args = {[1] = "SyncResize", [2] = {[1] = {["Part"] = part, ["CFrame"] = cf, ["Size"] = size}}}
+    _(args)
+end
+
+function SetName(part, stringg)
+    local args = {[1] = "SetName", [2] = {[1] = part}, [3] = stringg}
+    _(args)
+end
+
+function Palat()
+    local root = char.HumanoidRootPart
+    local spawnPos = CFrame.new(math.floor(root.Position.X), math.floor(root.Position.Y) - 10, math.floor(root.Position.Z))
+    
+    CreateSpawn(spawnPos, workspace)
+
+    for i,v in game.Workspace:GetChildren() do
+        if v:IsA("SpawnLocation") and (v.Position - spawnPos.p).Magnitude < 2 then
+            SetName(v, "Part")
+            Resize(v, Vector3.new(2500, 1, 2500), spawnPos)
+            SetAnchor(true, v)
+            SetLocked(v,true)
+        end
+    end
+end
+
+Palat()
+  end) 
 end;
 task.spawn(C_15);
 -- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextButton.LocalScript
 local function C_17()
 	local script = LMG2L["LocalScript_17"];
-	
+	local getbutton = script.parent
+  getbutton.MouseButton1Down:connect(function()
+  local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+local tool
+
+
+for _, v in player:GetDescendants() do
+    if v.Name == "SyncAPI" then
+        tool = v.Parent
+        break
+    end
+end
+for _, v in game.ReplicatedStorage:GetDescendants() do
+    if v.Name == "SyncAPI" then
+        tool = v.Parent
+        break
+    end
+end
+
+local remote = tool.SyncAPI.ServerEndpoint
+local function Send(args) remote:InvokeServer(unpack(args)) end
+
+
+local function CreatePart(cf, parent)
+    Send({"CreatePart", "Normal", cf, parent})
+end
+local function MovePart(part, cf)
+    Send({"SyncMove", {{Part = part, CFrame = cf}}})
+end
+local function SetAnchor(bool, part)
+    Send({"SyncAnchor", {{Part = part, Anchored = bool}}})
+end
+local function SetLocked(part, bool)
+    Send({"SetLocked", {part}, bool})
+end
+local function AddMesh(part)
+    Send({"CreateMeshes", {{Part = part}}})
+end
+local function Resize(part, size, cf)
+    Send({"SyncResize", {{Part = part, Size = size, CFrame = cf}}})
+end
+local function SetColor(part, color)
+    Send({"SyncColor", {{Part = part, Color = color, UnionColoring = false}}})
+end
+local function SetCylinderMesh(part)
+    
+    local args = {
+        "CreateMeshes",
+        {
+            {
+                Part = part
+            }
+        }
+    }
+    Send(args)
+    
+    Send({
+        "SyncMesh",
+        {
+            {
+                Part = part,
+                Scale = Vector3.new(1, 0.5, 1)
+            }
+        }
+    })
+end
+
+
+local padCF = CFrame.new(hrp.Position.X, hrp.Position.Y - 4, hrp.Position.Z)
+CreatePart(padCF, workspace)
+
+
+local pad
+for _, v in workspace:GetDescendants() do
+    if v:IsA("BasePart") and (v.Position - Vector3.new(hrp.Position.X, hrp.Position.Y - 4, hrp.Position.Z)).Magnitude < 0.1 then
+        pad = v
+        break
+    end
+end
+
+if pad then
+    SetAnchor(true, pad)
+    SetLocked(pad, true)
+    Resize(pad, Vector3.new(8, 1.2, 8), pad.CFrame)
+    SetColor(pad, Color3.fromRGB(255, 105, 180))
+    SetCylinderMesh(pad)
+
+    
+    while true do
+        local targetCF = CFrame.new(hrp.Position.X, hrp.Position.Y - 4, hrp.Position.Z)
+        MovePart(pad, targetCF)
+        wait()
+    end
+end
+  end) 
 end;
 task.spawn(C_17);
 -- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextButton.LocalScript
 local function C_19()
 	local script = LMG2L["LocalScript_19"];
-	
+		local getbutton = script.parent
+  getbutton.MouseButton1Down:connect(function()
+  local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+
+	RequestCommand:InvokeServer(";music 133251269532695 ;pitch 0.111 ;volume inf")
+  end) 
 end;
 task.spawn(C_19);
 -- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextButton.LocalScript
