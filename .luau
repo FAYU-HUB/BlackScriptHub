@@ -956,7 +956,9 @@ local function C_1d()
 	local script = LMG2L["LocalScript_1d"];
     local getbutton = script.parent
     getbutton.MouseButton1Down:connect(function()
-	Instance.new("Hint", game.Workspace).Text = "This Script Was Made By Kitty_Hackedz"
+	local hint = Instance.new("Hint", game.Workspace).Text = "This Script Was Made By Kitty_Hackedz"
+    wait(1.5)
+    hint:Destroy()
     end)
 end;
 task.spawn(C_1d);
