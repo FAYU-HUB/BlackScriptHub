@@ -1,0 +1,201 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+
+designed using localmaze gui creator
+]=]
+
+-- Instances: 21 | Scripts: 0 | Modules: 0 | Tags: 0
+local LMG2L = {};
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui
+LMG2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+LMG2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+LMG2L["ScreenGui_1"]["ResetOnSpawn"] = false;
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame
+LMG2L["Frame_2"] = Instance.new("Frame", LMG2L["ScreenGui_1"]);
+LMG2L["Frame_2"]["BorderSizePixel"] = 0;
+LMG2L["Frame_2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Frame_2"]["Size"] = UDim2.new(1.03146, 0, 1.21017, 0);
+LMG2L["Frame_2"]["Position"] = UDim2.new(-0.02242, 0, -0.20968, 0);
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.ImageLabel
+LMG2L["ImageLabel_3"] = Instance.new("ImageLabel", LMG2L["Frame_2"]);
+LMG2L["ImageLabel_3"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- LMG2L["ImageLabel_3"]["ImageContent"] = ;
+LMG2L["ImageLabel_3"]["Image"] = [[rbxassetid://94709226292358]];
+LMG2L["ImageLabel_3"]["Size"] = UDim2.new(0.98792, 0, 0.99505, 0);
+LMG2L["ImageLabel_3"]["Position"] = UDim2.new(0.00483, 0, 0.01485, 0);
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextLabel
+LMG2L["TextLabel_4"] = Instance.new("TextLabel", LMG2L["Frame_2"]);
+LMG2L["TextLabel_4"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_4"]["TextSize"] = 36;
+LMG2L["TextLabel_4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+LMG2L["TextLabel_4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextLabel_4"]["Size"] = UDim2.new(0.77778, 0, 0.06436, 0);
+LMG2L["TextLabel_4"]["Text"] = [[FUCK UN! TEAM 9X7X9X4X6]];
+LMG2L["TextLabel_4"]["Position"] = UDim2.new(0.1256, 0, 0.17822, 0);
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextLabel
+LMG2L["TextLabel_5"] = Instance.new("TextLabel", LMG2L["Frame_2"]);
+LMG2L["TextLabel_5"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_5"]["TextSize"] = 36;
+LMG2L["TextLabel_5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+LMG2L["TextLabel_5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_5"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_5"]["Size"] = UDim2.new(0.45169, 0, 0.06436, 0);
+LMG2L["TextLabel_5"]["Text"] = [[NIGGA UN! ]];
+LMG2L["TextLabel_5"]["Position"] = UDim2.new(0.04348, 0, 0.23762, 0);
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextLabel.UIStroke
+LMG2L["UIStroke_6"] = Instance.new("UIStroke", LMG2L["TextLabel_5"]);
+
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextLabel
+LMG2L["TextLabel_7"] = Instance.new("TextLabel", LMG2L["Frame_2"]);
+LMG2L["TextLabel_7"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_7"]["TextSize"] = 36;
+LMG2L["TextLabel_7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+LMG2L["TextLabel_7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_7"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_7"]["Size"] = UDim2.new(0.47826, 0, 0.06436, 0);
+LMG2L["TextLabel_7"]["Text"] = [[FUCKED UP DR_HARKINIAN]];
+LMG2L["TextLabel_7"]["Position"] = UDim2.new(0.34058, 0, 0.36634, 0);
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextLabel.UIStroke
+LMG2L["UIStroke_8"] = Instance.new("UIStroke", LMG2L["TextLabel_7"]);
+
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextLabel
+LMG2L["TextLabel_9"] = Instance.new("TextLabel", LMG2L["Frame_2"]);
+LMG2L["TextLabel_9"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_9"]["TextSize"] = 36;
+LMG2L["TextLabel_9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+LMG2L["TextLabel_9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_9"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_9"]["Size"] = UDim2.new(0.34783, 0, 0.06436, 0);
+LMG2L["TextLabel_9"]["Text"] = [[Your IP: 186.957.934]];
+LMG2L["TextLabel_9"]["Position"] = UDim2.new(0.04348, 0, 0.5396, 0);
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextLabel.UIStroke
+LMG2L["UIStroke_a"] = Instance.new("UIStroke", LMG2L["TextLabel_9"]);
+
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextLabel
+LMG2L["TextLabel_b"] = Instance.new("TextLabel", LMG2L["Frame_2"]);
+LMG2L["TextLabel_b"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_b"]["TextSize"] = 36;
+LMG2L["TextLabel_b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+LMG2L["TextLabel_b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_b"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_b"]["Size"] = UDim2.new(0.34783, 0, 0.06436, 0);
+LMG2L["TextLabel_b"]["Text"] = [[FUCK U NIGGERS! ]];
+LMG2L["TextLabel_b"]["Position"] = UDim2.new(0.48551, 0, 0.71287, 0);
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextLabel.UIStroke
+LMG2L["UIStroke_c"] = Instance.new("UIStroke", LMG2L["TextLabel_b"]);
+
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextLabel
+LMG2L["TextLabel_d"] = Instance.new("TextLabel", LMG2L["Frame_2"]);
+LMG2L["TextLabel_d"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_d"]["TextSize"] = 36;
+LMG2L["TextLabel_d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+LMG2L["TextLabel_d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_d"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_d"]["Size"] = UDim2.new(0.34783, 0, 0.06436, 0);
+LMG2L["TextLabel_d"]["Text"] = [[FUCK U NIGGERS! ]];
+LMG2L["TextLabel_d"]["Position"] = UDim2.new(0.48551, 0, 0.69802, 0);
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextLabel.UIStroke
+LMG2L["UIStroke_e"] = Instance.new("UIStroke", LMG2L["TextLabel_d"]);
+
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextLabel
+LMG2L["TextLabel_f"] = Instance.new("TextLabel", LMG2L["Frame_2"]);
+LMG2L["TextLabel_f"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_f"]["TextSize"] = 36;
+LMG2L["TextLabel_f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+LMG2L["TextLabel_f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_f"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_f"]["Size"] = UDim2.new(0.34783, 0, 0.06436, 0);
+LMG2L["TextLabel_f"]["Text"] = [[FUCK U NIGGERS! ]];
+LMG2L["TextLabel_f"]["Position"] = UDim2.new(0.48551, 0, 0.67822, 0);
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextLabel.UIStroke
+LMG2L["UIStroke_10"] = Instance.new("UIStroke", LMG2L["TextLabel_f"]);
+
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextLabel
+LMG2L["TextLabel_11"] = Instance.new("TextLabel", LMG2L["Frame_2"]);
+LMG2L["TextLabel_11"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_11"]["TextSize"] = 36;
+LMG2L["TextLabel_11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_11"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+LMG2L["TextLabel_11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_11"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_11"]["Size"] = UDim2.new(0.34783, 0, 0.06436, 0);
+LMG2L["TextLabel_11"]["Text"] = [[FUCK U NIGGERS! ]];
+LMG2L["TextLabel_11"]["Position"] = UDim2.new(0.48551, 0, 0.66337, 0);
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextLabel.UIStroke
+LMG2L["UIStroke_12"] = Instance.new("UIStroke", LMG2L["TextLabel_11"]);
+
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextLabel
+LMG2L["TextLabel_13"] = Instance.new("TextLabel", LMG2L["Frame_2"]);
+LMG2L["TextLabel_13"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_13"]["TextSize"] = 36;
+LMG2L["TextLabel_13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_13"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+LMG2L["TextLabel_13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_13"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_13"]["Size"] = UDim2.new(0.76812, 0, 0.06436, 0);
+LMG2L["TextLabel_13"]["Text"] = [[FUCK NIGGERS FUCK NIGGERS]];
+LMG2L["TextLabel_13"]["Position"] = UDim2.new(0.27053, 0, 0.5495, 0);
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.TextLabel.UIStroke
+LMG2L["UIStroke_14"] = Instance.new("UIStroke", LMG2L["TextLabel_13"]);
+
+
+
+-- Players.9x7x9x4x6.PlayerGui.ScreenGui.Frame.UIAspectRatioConstraint
+LMG2L["UIAspectRatioConstraint_15"] = Instance.new("UIAspectRatioConstraint", LMG2L["Frame_2"]);
+LMG2L["UIAspectRatioConstraint_15"]["AspectRatio"] = 2.0495;
+
+
+
+return LMG2L["ScreenGui_1"], require;
