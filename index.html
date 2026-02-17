@@ -1,0 +1,25 @@
+<html>
+<body>
+<input type="text" value="Teks rahasia ini siap disalin" id="myInput">
+<button id="copyBtn" onclick="copyToClipboard()">Salin Teks</button>
+</body>
+<script>
+function copyToClipboard() {
+  const copyText = document.getElementById("myInput").value;
+  const btn = document.getElementById("copyBtn");
+
+  navigator.clipboard.writeText(copyText).then(() => {
+    const originalText = btn.innerText;
+    btn.innerText = "Tersalin!";
+    btn.style.backgroundColor = "#4CAF50";
+    btn.style.color = "white";
+
+    setTimeout(() => {
+      btn.innerText = originalText;
+      btn.style.backgroundColor = "";
+      btn.style.color = "";
+    }, 2000);
+  });
+}
+</script>
+</html>
